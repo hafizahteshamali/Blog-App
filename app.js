@@ -108,21 +108,7 @@ const StateChanging = ()=>{
         if (user) {
           const uid = user.uid;
           window.location.href = "/dashboard/dashboard.html";
+
         }
       });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
