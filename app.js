@@ -107,7 +107,7 @@ const StateChanging = ()=>{
     onAuthStateChanged(auth, (user) => {
         if (user) {
           const uid = user.uid;
-          window.location.href = "/dashboard/dashboard.html";
+          window.location.href = "dashboard/dashboard.html";
         }
       });
 }
