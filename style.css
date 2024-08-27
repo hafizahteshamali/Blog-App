@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url('assets/images/stacked-waves-haikei.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.logo{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.navbar{
+    width: 100%;
+    background-color: #0000008a;
+    backdrop-filter: blur(30px);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.navigation ul li a{
+    color: #ffffff !important;
+    font-size: 17px;
+}
+.header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header-btn a{
+    border: 2px solid #ffffff;
+    padding: 8px 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.header-btn a:hover{
+    background-color: yellow;
+    color: #000000 !important;
+}
+.header-btn a.active{
+    background-color: yellow;
+    color: #000000 !important;
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+.box-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.box{
+    min-height: 500px;
+    width: 50%;
+    background-color: #0000008a;
+    backdrop-filter: blur(30px);
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 1px;
+}
+.tabContent{
+    display: none;
+}
+.tabContent.active{
+    display: block;
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
+    gap: 20px;
+}
+.box form h2{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.box form label{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.box form input{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+form button{
+    width: 40%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 255, 0.575) !important;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+form button i{
+    color: rgba(0, 0, 255, 0.575) !important;
+    font-size: 30px;
+}
+#loginBtn{
+    margin-top: 50px;
+}
+
+
+
+
+.modal-title{
+    font-size: 800 !important;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form span{
+    font-size: 18px;
+    font-weight: 600;
+}
+form input, form select{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #776d6d;
+}
+form #addBtn{
+    width: 40%;
+    padding: 10px;
+    background-color: #000000;
+    backdrop-filter: blur(30px);
+    color: #fff !important;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+.btn-box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.btn-box button{
+    width: max-content;
+    border: 1px solid;
+    padding: 5px;
+    background-color: transparent;
+    color: #000000 !important;
+    cursor: pointer;
+}
+.update #updateBtn{
+    width: 45%;
+}
+.table-data{
+    height: 500px;
+    width: 100%;
+    margin: 50px auto;  
+}
+.table-data table{
+    width: 100%;
+}
+.table-data table tr{
+    border: 2px solid #776d6d;
+}
+.table-data table tr th{
+    color: #000000;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #776d6d;
+}
+.table-data table tr td{
+    padding: 10px;
+    font-size: 17px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #776d6d;
+}
+td .btn-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0px solid #776d6d;
+}
+td button{
+    padding: 5px 15px;
+    background-color: rgb(41, 41, 68);
+    backdrop-filter: blur(30px);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: 350ms ease-in-out;
+}
+td button:hover{
+    background-color: yellow;
+    color: #000000;
+}
+
+#updateBtn{
+    width: 45%;
+    border: 1px solid;
+    background-color: green;
+    color: #ffffff !important;
+}
+
+.contentTab{
+    display: none;
+}
+.contentTab.active{
+    display: block;
+}
+#blogBtns button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: green;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.card{
+    background: #fff !important;
+}
+
+
+/* Blog style */
+.blog-box{
+    height: 250px;
+    width: 90%;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+/* Blog style */
