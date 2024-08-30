@@ -243,8 +243,13 @@ td button:hover{
 .contentTab.active{
     display: block;
 }
+#blogBtns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 #blogBtns button{
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: green;
     color: #ffffff;
@@ -266,3 +271,24 @@ td button:hover{
     border: 2px solid #fff;
 }
 /* Blog style */
+
+
+.detailBoxWrap{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff48;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.detailBoxWrap img{
+    object-fit: contain;
+    border-radius: 15px;
+}

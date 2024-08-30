@@ -173,10 +173,11 @@ const GetBlogs = (blogsData) => {
                         <strong class="d-inline-block mb-2 text-primary-emphasis">${blog.BlogCategory}</strong>
                         <h3 class="mb-0">${blog.BlogerName}</h3>
                         <div class="mb-1 text-body-secondary">Published Date: ${new Date().toDateString()}</div>
-                        <p class="card-text mb-auto">${blog.BlogDes}</p>
+                        <p class="card-text mb-auto">${blog.BlogDes.slice(0, 50)}...</p>
                         <div id="blogBtns" class="btn-wrap">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="editData('${blog.id}')">Edit</button>
                         <button onclick="deleteData('${blog.id}', this)">Delete</button>
+                        <button onclick="detailData('${blog.id}', this)">View more...</button>
                     </div>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -204,7 +205,7 @@ const displayTableData = async () => {
             <tr>
                 <td>${blog.BlogerName}</td>
                 <td>${blog.BlogCategory}</td>
-                <td>${blog.BlogDes}</td>
+                <td>${blog.BlogDes.slice(0, 50)}...</td>
                 <td>${blog.imgname || "No Image Available"}</td> <!-- Use the stored imgname -->
                 <td>
                     <div class="btn-wrap">
@@ -268,6 +269,11 @@ window.deleteData = async (id, button) => {
         button.innerHTML = "Delete";
     }
 };
+
+window.detailData = (id) =>{
+    localStorage.setItem("blogID", id);
+    window.location.href = "./DetailPage.html";
+}
 
 
 
